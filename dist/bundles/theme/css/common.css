@@ -1022,7 +1022,7 @@ h2 {
     }
 
     .footer .nav-second li a {
-        font-size: 2.953rem;
+        /* font-size: 2.953rem; */
     }
 
     .infoFooterSection .para-reg img {
@@ -1420,6 +1420,18 @@ h2 {
 
 
 /* -------- */
+h2.fnt-120 {
+    font-size: 120px;
+}
+h2.fnt-90 {
+    font-size: 90px;
+}
+.trans {
+    transition: opacity .3s ease;
+}
+.trans:hover {
+    opacity: .65;
+}
 .max-100 {
     max-width: 100%;
 }
@@ -1459,4 +1471,179 @@ h2 {
 }
 .winner_card .content.red {
     background-color: #F35454;
+}
+
+
+.section-primary {
+    padding-top: 15vw;
+}
+.section-primary .form-content {
+    text-align: center;
+    margin-top: -400px;
+}
+.section-primary .form-content input,
+.section-primary .form-content select {
+    outline: none !important;
+    max-width: 100%;
+    width: 920px;
+    height: 175px;
+    box-shadow: 0px 0px 9px 10px #ff0000;
+    border-radius: 999px;
+    border: 10px #ff0000;
+    font-size: 70px;
+    text-align: center;
+    font-weight: 700;
+    color: #FF4343;
+    line-height: 1.5;
+}
+.section-primary .icon_01 {
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -50%)
+}
+
+.section-secondary {
+    position: relative;
+}
+.section-secondary .code {
+    position: absolute;
+    z-index: 10;
+    bottom: 10%;
+    right: 10%;
+    width: 330px;
+}
+
+.section-tertiary {
+    position: relative;
+}
+.section-tertiary .code {
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+    max-width: 100%;
+}
+
+.section-giai-trung-moi-ngay .number {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    z-index: 10;
+    font-size: 160px;
+    transform: translateX(-50%);
+    color: #FAFF00;
+    font-weight: 700;
+    padding-left: 0.5em;
+}
+
+.section-giai-trung-moi-ngay .form-content {
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    bottom: 10%;
+}
+.section-giai-trung-moi-ngay .form-content input {
+    outline: none !important;
+    max-width: 100%;
+    width: 920px;
+    height: 175px;
+    box-shadow: 0px 0px 9px 10px #ff0000;
+    border-radius: 999px;
+    border: 10px #ff0000;
+    font-size: 70px;
+    text-align: center;
+    font-weight: 700;
+    color: #FF4343;
+    line-height: 1.5;
+}
+.section-giai-trung-moi-ngay .icon_01 {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.section-giai-trung-moi-ngay .icon_02 {
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -50%)
+}
+
+.millionaire {
+    text-align: center;
+}
+.millionaire .head {
+    position: relative;
+}
+.millionaire .price {
+    line-height: 1;
+    font-size: 40px;
+    font-weight: 700;
+    color: #FF0000;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+    text-transform: uppercase;
+    text-shadow: 0 0 3px #ebff00, 0 0 3px #ebff00, 0 0 3px #ebff00, 0 0 3px #ebff00, 0 0 3px #ebff00, 0 0 3px #ebff00, 0 0 3px #ebff00, 0 0 3px #ebff00, 0 0 3px #ebff00, 0 0 3px #ebff00;
+}
+.millionaire .avatar {
+    position: relative;
+    border-radius: 999px;
+    margin-bottom: 15px;   
+}
+.millionaire .name {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 15px;   
+}
+.millionaire .text {
+    font-size: 35px;
+    color: #260979;
+}
+
+.section-trieu-phu {
+    background-image: url(../../../assets/theme/images/index/bg_001.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.section-giai-ty-phu {
+    background-image: url(../../../assets/theme/images/index/bg_001.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+.section-giai-ty-phu .mot-ty {
+    margin-top: -150px;
+}
+.section-giai-ty-phu .mr-top {
+    margin-top: -150px;
+}
+
+.section-giai-ty-phu .btn {
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -25%);
+}
+
+.section-cach-thuc-tham-gia {
+    padding-bottom: 200px;
+}
+
+.section-cach-thuc-tham-gia {
+    background-image: url(../../../assets/theme/images/index/bg_003.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
 }

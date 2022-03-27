@@ -1,0 +1,37 @@
+extends _layouts/default
+
+block vars
+    -title        = 'Karo | Trứng tươi - chà bông'
+    -description  = ''
+    -keywords     = ''
+    -pageID       = 'top'
+    -path         = '.'
+block container
+    
+    .tvcSection.bgCommon.h-fullscreen.overflow-hidden.px-5.px-xl-0.pb-5.mb-5.pb-xl-0.mb-xl-0
+      .row.justify-content-center.align-items-end.pb-5
+        .col-xl-3.d-none.d-xl-block
+          .row.justify-content-end
+            .col-7.col-xl-12.threehtkrewardtvcSection
+              img.d-xl-none(loading='lazy' src='./assets/theme/images/300rewardtvc7683940.png?v=1.1.36' alt='300.000 giải thưởng với hàng ngàn giải mỗi ngày')
+              .d-none.d-xl-block.resp
+                img.w-auto.max-100(loading='lazy' src='./assets/theme/images/money.png?v=1.1.36' alt='300.000 giải thưởng với hàng ngàn giải mỗi ngày')
+                img.w-auto.max-100(loading='lazy' src='./assets/theme/images/giai_ti_phu.png?v=1.1.36' alt='300.000 giải thưởng với hàng ngàn giải mỗi ngày')
+              .d-flex.align-item-center
+                .column
+                  img.w-auto.max-100(loading='lazy' src='./assets/theme/images/200000_giai_thuong.png?v=1.1.36' alt='')
+                .column
+                  a(href="#")
+                    img.w-auto.max-100(loading='lazy' src='./assets/theme/images/btn_nhap_code.png?v=1.1.36' alt='')
+        .col-xl-6.order-xl-first
+          .videoSection.mx-5.mx-xl-0
+            .videothemetopbtm
+              .videothemeleftright
+                iframe(loading='lazy' width='560' height='315' src='https://www.youtube.com/embed/AStHGG87mlc' frameborder='0' allowfullscreen='')
+        .col-12.d-block.d-xl-none
+
+    .section-cach-thuc-tham-gia
+        .position-relative
+            h2.fnt-90 CÁCH THỨC THAM GIA
+            p.text-center
+                img.max-100(loading='lazy' src="./assets/theme/images/cach_thuc_tham_gia.png?v=1.1.36", alt="")
