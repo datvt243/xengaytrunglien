@@ -1,0 +1,225 @@
+script(type='text/javascript' src='${pageContext.request.contextPath}/cdn.datatables.net/v/bs4/dt-1.10.24/datatables.min.js')
+script(type='text/javascript' src='${pageContext.request.contextPath}/Scripts/homepage3940.js?v=1.1.36')
+script(type='text/javascript' src='${pageContext.request.contextPath}/Scripts/homepage.js?v=1.1.36')
+
+script(async type='text/javascript').
+  function onRecaptcha(params) {
+      console.log(params)
+      if (params) {
+          isValidReCaptcha = true;
+          $('#txtTokenSpin').val(params);
+      } else {
+          isValidReCaptcha = false;
+          $('#txtTokenSpin').val('');
+      }
+  }
+
+  function onResetReCaptcha() {
+      isValidReCaptcha = false;
+      grecaptcha.reset();
+  }
+
+script(async defer type='text/javascript').
+  $(document).ready(function () {
+    //set default spin
+    //wheel(1);
+
+    setTimeout(function () {
+        Utils.loaderStyle("/cdnjs.cloudflare.com/ajax/libs/jquery-jgrowl/1.4.7/jquery.jgrowl.min.css")
+            .then(() => {
+                console.log("loaded");
+            })
+            .catch(() => {
+                console.log("error");
+            });
+
+        Utils.loaderStyle("/cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css")
+            .then(() => {
+                console.log("loaded");
+            })
+            .catch(() => {
+                console.log("error");
+            });
+    }, 500);
+
+    setTimeout(function () {
+        Utils.loaderScript("/assets/theme/js/jquery.jcarousel.min3940.js?v=1.1.36")
+            .then(() => {
+                console.log("jquery.jcarousel.min");
+                var jcawrapper3Width = $('.jcarousel-wrapper3').width();
+                var jcawrapper3Height = $('.jcarousel-wrapper3').height();
+                $(".jcarousel-wrapper3 .jcarousel li").css("width", jcawrapper3Width);
+                $(".jcarousel-wrapper3 .jcarousel li").css("height", jcawrapper3Height);
+
+                $('#jcarousel1, #jcarousel2,#jcarousel3')
+                    .jcarousel({
+                        wrap: 'circular'
+                    })
+                    .jcarouselAutoscroll({
+                        interval: 3000,
+                        target: '+=1',
+                        autostart: true
+                    });
+
+                $('.jcarousel-control-prev1, .jcarousel-control-prev2')
+                    .jcarouselControl({
+                        target: '-=1'
+                    })
+                    .on('click', function (e) {
+                        e.preventDefault();
+                    });
+
+                $('.jcarousel-control-next1, .jcarousel-control-next2')
+                    .jcarouselControl({
+                        target: '+=1'
+                    })
+                    .on('click', function (e) {
+                        e.preventDefault();
+                    });
+            })
+            .catch(() => {
+                console.log("error");
+            });
+
+
+        Utils.loaderScript("/cdnjs.cloudflare.com/ajax/libs/jquery-jgrowl/1.4.7/jquery.jgrowl.min.js")
+            .then(() => {
+                console.log("jquery.jgrowl.min");
+            })
+            .catch(() => {
+                console.log("error");
+            });
+
+        Utils.loaderScript("https://cdn.jsdelivr.net/npm/sweetalert2@10")
+            .then(() => {
+                console.log("sweetalert");
+
+                setTimeout(function () {
+                    Utils.Notify.swalFire({
+                        html: '<b style="font-size: xx-large;">Xé nhãn chai, tham gia sự kiện online ngày 05/07/2021</b> <br><a target="_blank" href="//bom.to/fanpage-tanhiepphat"><u>Tại đây</u><img src="/assets/minigame/double-award/img/cum-san-pham.png?1.1.36" alt="Xé ngay trúng liền" class=" " loading="lazy" style="width: 100%;"> </a>',
+                        showCloseButton: true,
+                        showConfirmButton: false,
+                        allowOutsideClick: true,
+                        //timer: 5000,
+                        hideClass: {
+                            popup: 'animate__animated animate__fadeOutUp'
+                        },
+                        confirmButtonClass: "btn-small",
+                    })
+                }, 1000);
+            })
+            .catch(() => {
+                console.log("error");
+            });
+
+        Utils.loaderScript("/kit.fontawesome.com/4e4d0ff18e.js")
+            .then(() => {
+                console.log("fontawesome");
+            })
+            .catch(() => {
+                console.log("error");
+            });
+
+        Utils.loaderScript("/bundles/theme/js/indexdb.js?v=1.1.36")
+            .then(() => {
+                console.log("indexdb");
+            })
+            .catch(() => {
+                console.log("error");
+            });
+
+        /*
+          * Global site tag (gtag.js) - Google Analytics
+          */
+        //Utils.loaderScript("https://www.googletagmanager.com/gtag/js?id=G-CLEWM2LKWQ")
+        //    .then(() => {
+        //        console.log("googletagmanager");
+
+        //        window.dataLayer = window.dataLayer || [];
+        //        function gtag() { dataLayer.push(arguments); }
+        //        gtag('js', new Date());
+
+        //        gtag('config', 'G-CLEWM2LKWQ');
+        //    })
+        //    .catch(() => { console.log("error"); });
+
+        infoDevice(console.log);
+    }, 500);
+
+  });
+
+script(defer type='text/javascript').
+  $(document).ready(function () {
+      //set default spin
+      /*wheel(1);*/
+      //setTimeout(function () {
+      //    Utils.loaderScript("https://www.google.com/recaptcha/api.js?hl=vi")
+      //        .then(() => { console.log("loaded"); })
+      //        .catch(() => { console.log("error"); });
+      //}, 1000);
+  });
+
+  Utils.Validate.setInputFilter(document.getElementById("txtPhone"), function (value) {
+      //return /^\+?\d*\.?\d*$/.test(value) && value.length <= 20 // Allow digits and '.' only, using a RegExp
+      return /^\d*\d*$/.test(value) && value.length <= 20 // Allow digits and '.' only, using a RegExp
+  });
+
+script(type='text/javascript').
+  ('#btnScrollSpinTOP').addClass('top');
+
+script(type='text/javascript').
+  localStorage.setItem('thp_ver', '1.1.36');
+  $(document).ready(function () {
+      if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('/sw?v=1.1.36', {
+              scope: './'
+          })
+              .then(waitUntilInstalled)
+              // .then(showFilesList)
+              .catch(function (error) {
+                  // Something went wrong during registration. The service-worker.js file
+                  // might be unavailable or contain a syntax error.
+                  console.log(error)
+              });
+      } else {
+          // The current browser doesn't support service workers.
+          console.log('Service workers are not supported in the current browser.');
+      }
+
+      // Helper function which returns a promise which resolves once the service worker registration
+      // is past the "installing" state.
+      function waitUntilInstalled(registration) {
+          return new Promise(function (resolve, reject) {
+              if (registration.installing) {
+                  // If the current registration represents the "installing" service worker, then wait
+                  // until the installation step (during which the resources are pre-fetched) completes
+                  // to display the file list.
+                  registration.installing.addEventListener('statechange', function (e) {
+                      if (e.target.state === 'installed') {
+                          resolve();
+                      } else if (e.target.state === 'redundant') {
+                          reject();
+                      }
+                  });
+              } else {
+                  // Otherwise, if this isn't the "installing" service worker, then installation must have been
+                  // completed during a previous visit to this page, and the resources are already pre-fetched.
+                  // So we can show the list of files right away.
+                  resolve();
+              }
+          });
+      }
+  });
+
+// Global site tag (gtag.js) - Google Analytics
+//
+  <script async
+  src="https://www.googletagmanager.com/gtag/js?id=G-CLEWM2LKWQ"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+  dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'G-CLEWM2LKWQ');
+  </script>

@@ -1,0 +1,70 @@
+extends _layouts/default
+
+block vars
+    -title        = 'Karo | Trứng tươi - chà bông'
+    -description  = ''
+    -keywords     = ''
+    -pageID       = 'top'
+    -path         = '.'
+block container
+    
+  .tvcSection.bgCommon.h-fullscreen.overflow-hidden.px-5.px-xl-0.pb-5.mb-5.pb-xl-0.mb-xl-0
+    .row.justify-content-center.align-items-end.pb-5
+      .col-xl-3.d-none.d-xl-block
+        .row.justify-content-end
+          .col-7.col-xl-12.threehtkrewardtvcSection
+            img.d-xl-none(loading='lazy' src='./assets/theme/images/300rewardtvc7683940.png?v=1.1.36' alt='300.000 giải thưởng với hàng ngàn giải mỗi ngày')
+            .d-none.d-xl-block.resp
+              img.w-auto.max-100(loading='lazy' src='./assets/theme/images/money.png?v=1.1.36' alt='300.000 giải thưởng với hàng ngàn giải mỗi ngày')
+              img.w-auto.max-100(loading='lazy' src='./assets/theme/images/giai_ti_phu.png?v=1.1.36' alt='300.000 giải thưởng với hàng ngàn giải mỗi ngày')
+            .d-flex.align-item-center
+              .column
+                img.w-auto.max-100(loading='lazy' src='./assets/theme/images/200000_giai_thuong.png?v=1.1.36' alt='')
+              .column
+                a(href="#")
+                  img.w-auto.max-100(loading='lazy' src='./assets/theme/images/btn_nhap_code.png?v=1.1.36' alt='')
+      .col-xl-6.order-xl-first
+        .videoSection.mx-5.mx-xl-0
+          .videothemetopbtm
+            .videothemeleftright
+              iframe(loading='lazy' width='560' height='315' src='https://www.youtube.com/embed/AStHGG87mlc' frameborder='0' allowfullscreen='')
+      .col-12.d-block.d-xl-none
+
+  .winninglistsearchSection
+    .container
+      h2 DANH SÁCH TRÚNG THƯỞNG
+      form(action='#')
+        .field.position-relative
+          .fieldinner.d-flex
+            input#txtPhoneWinner(type='text' placeholder='Dò kết quả ngay!')
+            button#btnSearchWinner(type='button')
+              span.visually-hidden Tìm kiếm
+      .winnerlisttable.pb-5.mb-5.d-flex.px-5.px-xxl-0.text-center(style='justify-content: center;')
+        table#gridListAwards.table.table-bordered.m-auto.row-border.hover.compact(cellspacing='0')
+          thead
+            tr
+              th số điện thoại
+              th mã dự thưởng
+              th ngày quay thưởng
+          tbody#tbodyGridListAwards
+            tr
+              td
+              td
+              td
+      .row
+        .col-12.col-md-4
+          .box01
+            img.w-100(loading='lazy' src='./assets/theme/images/box1.png?v=1.1.36' alt='')
+        .col-12.col-md-4
+          .box02
+            img.w-100(loading='lazy' src='./assets/theme/images/box2.png?v=1.1.36' alt='')
+        .col-12.col-md-4
+          .box03
+            img.w-100(loading='lazy' src='./assets/theme/images/box3.png?v=1.1.36' alt='')
+      .deco
+        img.w-atuo(loading='lazy' src='./assets/theme/images/3_chai.png?v=1.1.36' alt='')
+  .billionaire_award
+    .code
+      a(href="#") 
+        img.w-100(loading='lazy' src='./assets/theme/images/btninputcode.png?v=1.1.36' alt='')
+    img.w-100(loading='lazy' src='./assets/theme/images/section_giai_ty_phu.png?v=1.1.36' alt='')

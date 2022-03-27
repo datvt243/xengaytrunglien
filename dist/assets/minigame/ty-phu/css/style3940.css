@@ -1,0 +1,239 @@
+.left {
+    float: left;
+}
+
+#popupEndGameRewards {
+    padding-top: 0%;
+    padding-bottom: 0%;
+    top: 1vh !important;
+}
+
+#popupEndGameRewards.popup {
+    background: url(../../double-award/img/background65cc.png?v=1.1.29) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#popupEndGameRewards > footer {
+    margin-top: -2%;
+}
+
+#h2Minigame {
+    font-size: 4rem;
+    transform: rotate(352deg);
+    -webkit-transform: rotate(352deg);
+    -ms-transform: rotate(352deg);
+    -moz-transform: rotate(352deg);
+}
+
+.imgFooter {
+    width: 100%;
+    margin-bottom: -1%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.sectionMinigameAw {
+    margin-top: -4%;
+    margin-bottom: -3%;
+}
+
+.txtMinigameAward {
+    text-align: center;
+    font-size: xx-large !important;
+}
+
+/*#popupEndGameRewardsMaskDollor {
+    position: fixed;
+    inset: 0px;
+    z-index: 11100;
+    background: url(/assets/minigame/ty-phu/img/mask-doplor.png?v=1.1.30) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}*/
+
+@media (min-width: 320px) and (max-width: 370px) {
+    #popupEndGameRewards.popup {
+        /*height: 40vh;*/
+    }
+
+    .sectionMinigameAw {
+        margin-top: 15%;
+        margin-bottom: -10%;
+    }
+
+    .txtMinigameAward {
+        font-size: medium !important;
+    }
+
+    #h2Minigame {
+        font-size: 3rem;
+    }
+
+    .imgFooter {
+        width: 100vw !important;
+    }
+}
+
+@media (min-width: 370px) and (max-width: 375px) {
+    #popupEndGameRewards.popup {
+        /*height: 40vh;*/
+    }
+
+    .sectionMinigameAw {
+        margin-top: 15%;
+        margin-bottom: -10%;
+    }
+
+    .txtMinigameAward {
+        font-size: medium !important;
+    }
+
+    #h2Minigame {
+        font-size: 3rem;
+    }
+
+    .imgFooter {
+        width: 100vw !important;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 400px) {
+    #popupEndGameRewards.popup {
+        /*height: 40vh;*/
+    }
+
+    .sectionMinigameAw {
+        margin-top: 15%;
+        margin-bottom: -10%;
+    }
+
+    .txtMinigameAward {
+        font-size: medium !important;
+    }
+
+    #h2Minigame {
+        font-size: 3rem;
+    }
+
+    .imgFooter {
+        width: 100vw !important;
+    }
+}
+
+@media (min-width: 400px) {
+    #popupEndGameRewards.popup {
+        /*height: 40vh;*/
+    }
+
+    .sectionMinigameAw {
+        margin-top: 15%;
+        margin-bottom: -8%;
+    }
+
+    .txtMinigameAward {
+        font-size: medium !important;
+    }
+
+    #h2Minigame {
+        font-size: 3rem;
+    }
+
+    .imgFooter {
+        width: 100vw !important;
+    }
+}
+
+@media (min-width: 576px) {
+    #popupEndGameRewards.popup {
+        height: 81rem;
+    }
+
+    .txtMinigameAward {
+        font-size: xx-large !important;
+    }
+}
+
+@media (min-width: 768px) {
+    #popupEndGameRewards.popup {
+        height: 52.7%;
+    }
+
+    .sectionMinigameAw {
+        margin-top: 15%;
+        margin-bottom: -3%;
+    }
+
+    .txtMinigameAward {
+        margin-top: -5rem;
+        font-size: xx-large !important;
+    }
+
+    #h2Minigame {
+        font-size: 3rem;
+    }
+
+    .imgFooter {
+        width: 77rem !important;
+    }
+
+    #popupEndGameRewards > footer {
+        margin-top: 0%;
+    }
+}
+
+@media (min-width: 1024px) {
+    #popupEndGameRewards.popup {
+        height: 50.7%;
+    }
+
+    .sectionMinigameAw {
+        margin-top: 4%;
+        margin-bottom: -3%;
+    }
+}
+
+@media (min-width: 1400px) {
+    #popupEndGameRewards.popup {
+        height: 60vw;
+    }
+
+    .imgFooter {
+        width: 100% !important;
+    }
+
+    .sectionMinigameAw {
+        margin-top: 0%;
+        margin-bottom: -4%;
+    }
+
+    .txtMinigameAward {
+        margin-top: -5rem;
+        font-size: xx-large !important;
+    }
+
+    #popupEndGameRewards > footer {
+        margin-top: -2%;
+    }
+}
+
+@media (min-width: 1590px) {
+
+}
+
+@media (min-width: 1900px) {
+}
+
+@media (min-width: 2056px) {
+    /*#popupEndGameRewards.popup {
+        height: 96%;
+    }*/
+    .sectionMinigameAw {
+        margin-top: -2%;
+        margin-bottom: -1%;
+    }
+}

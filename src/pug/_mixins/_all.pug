@@ -1,0 +1,68 @@
+//- -----------
+  - Schema
+mixin schema(page = 'under', text = 'Lorem, ipsum dolor.')
+    script(type="application/ld+json").
+        {
+          "@context": "http://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "item": {
+                "@id": "http://localhost/",
+                "name": "Lorem, ipsum dolor."
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "item": {
+                "@id": "http://localhost/#{page}/",
+        "name": "#{text}"
+        }
+        }
+        ]
+        }
+
+//- -----------
+  - Keyvisual
+
+mixin keyvisual(heading)
+    // ./ Keyvisual
+    .keyvisual
+        .container
+            h1.keyvisual-heading!= heading
+
+//- -----------
+  - Heading
+
+mixin heading_primary(text, heading = 'h2', classname = '')
+    #{heading}.heading-primary(class=classname)!= text
+
+mixin heading_secondary(text, heading = 'h2', classname = '')
+    #{heading}.heading-secondary(class=classname)!= text
+
+//- -----------
+  - Accordion
+
+mixin accordion(number = '000')
+    .accordion.js-accordion
+        h2.accordion-heading.is-toggle Accordion #{number} Lorem ipsum dolor sit amet.
+        .accordion-content
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat illum, cum doloremque id possimus perspiciatis, nulla fugit pariatur eaque at quibusdam. Distinctio ut unde inventore, dolores delectus iste facere aperiam!
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat illum, cum doloremque id possimus perspiciatis, nulla fugit pariatur eaque at quibusdam. Distinctio ut unde inventore, dolores delectus iste facere aperiam!
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat illum, cum doloremque id possimus perspiciatis, nulla fugit pariatur eaque at quibusdam. Distinctio ut unde inventore, dolores delectus iste facere aperiam!
+
+//- -----------
+  - Card
+
+mixin card(img)
+    .card
+        .card-figure
+            figure.figure
+                img(src=img alt="demo")
+        .card-content
+            h3.card-heading Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            .card-desc
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat illum, cum doloremque id possimus perspiciatis, nulla fugit pariatur eaque at quibusdam. Distinctio ut unde inventore, dolores delectus iste facere aperiam!

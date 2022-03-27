@@ -1,0 +1,33 @@
+.popup-wrapper
+#popupNotification.popup.px-5.px-xxl-0
+  h2#popupNotificationTitle XÉ NGAY TRÚNG LIỀN
+  p#popupNotificationContent.text-center.mt-12vh
+    | Cách 1: nhắn tin cú pháp 
+    code gửi 6020
+  .text-center
+    a#btnNotificationOK(href='#')
+      img(loading='lazy' src='./assets/theme/images/btnok.png' alt='OK')
+  a.btnClose.bgsprite(href='#')
+    span.visually-hidden Close
+  .row.justify-content-around.align-items-end.prodbtSection
+    .col-4
+      img.resp(loading='lazy' src='./assets/theme/images/rewardinfotvc.png' alt='Giải tỷ phú 1.2 tỷ và 3 giải triệu phú mỗi giải 100 triệu')
+    .col-4
+      div
+        img.resp(loading='lazy' src='./assets/theme/images/drinkborder.png' alt='7 drinking bottles')
+#popupSpinWheelReward.popup.px-5.px-xxl-0
+  h2.mt-1vh THAM GIA DỰ THƯỞNG
+  p.text-center Nhập số điện thoại để tham gia dự thưởng
+  form#frmSpinWheelWithCode.overflow-hidden(method='post' action='./home/SpinWheelWithCode' enctype='application/x-www-form-urlencoded' accept-charset='utf-8')
+    .field
+      input#txtPhone(type='tel' name='phone' placeholder='Số điện thoại' autocomplete='on' max='15')
+    .field
+      input#txtCode(type='text' name='code' placeholder='Mã dự thưởng' autocomplete='off')
+    div(style='width: 457px; height: 84px; margin: 0 auto 19px; padding: 0 20px;')
+      .g-recaptcha(data-sitekey='6LePIYcaAAAAAF0-mGwDcpH85-G7u1AohQBH5am4' data-size='normal' data-theme='light' data-callback='onRecaptcha' data-expired-callback='onRecaptcha' data-error-callback='onRecaptcha')
+      input#txtTokenSpin.hidden(type='hidden' name='token')
+    .text-center
+      button#btnAgree.bgsprite.btnAgree(type='button')
+        span.visually-hidden Xác nhận
+  a.btnClose.bgsprite(href='#')
+    span.visually-hidden Close

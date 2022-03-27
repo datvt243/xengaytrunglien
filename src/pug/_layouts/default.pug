@@ -1,0 +1,69 @@
+include ../_mixins/_all
+
+block vars
+    -title        = ''
+    -description  = ''
+    -keywords     = ''
+    -pageID       = ''
+    -path         = ''
+
+doctype html
+html.no-js(lang="vi" prefix="og: http://ogp.me/ns#")
+    head(lang="vi" prefix="og: http://ogp.me/ns#")
+        meta(charset='utf-8')
+        meta(http-equiv='Content-Type' content='text/html; charset=UTF-8')
+        meta(http-equiv='X-UA-Compatible' content='IE=edge')
+        meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='format-detection' content='telephone=no')
+        title Xé ngay trúng liền
+        meta(name='description' content='Xé Ngay Trúng Liền - GIẢI TÝ PHÚ 1.2 Tỷ, 3 GIẢI TRIỆU PHÚ mỗi giải 100 triệu và hơn 300.000 giải thưởng với hàn ngàn giải mỗi ngày')
+        meta(name='author' content='eSMS')
+        meta(property='fb:app_id' content='968792926989460')
+        meta(property='og:locale' content='vi_VN')
+        meta(property='og:type' content='website')
+        meta(property='og:title' content='Xé Ngay Trúng Liền')
+        meta(property='og:description' content='Xé Ngay Trúng Liền - GIẢI TÝ PHÚ 1.2 Tỷ, 3 GIẢI TRIỆU PHÚ mỗi giải 100 triệu và hơn 300.000 giải thưởng với hàn ngàn giải mỗi ngày')
+        meta(property='og:url' content='/')
+        meta(property='og:site_name' content='Xé Ngay Trúng Liền')
+        meta(property='og:image' content='./assets/img/key-visual-summer-2021-10.jpg')
+        meta(property='og:image:alt' content='Xé Ngay Trúng Liền - GIẢI TÝ PHÚ 1.2 Tỷ, 3 GIẢI TRIỆU PHÚ mỗi giải 100 triệu và hơn 300.000 giải thưởng với hàn ngàn giải mỗi ngày')
+        meta(name='twitter:card' content='summary')
+        meta(name='twitter:description' content='Xé Ngay Trúng Liền - GIẢI TÝ PHÚ 1.2 Tỷ, 3 GIẢI TRIỆU PHÚ mỗi giải 100 triệu và hơn 300.000 giải thưởng với hàn ngàn giải mỗi ngày')
+        meta(name='twitter:title' content='Xé ngay trúng liền - Trang chủ')
+        meta(name='twitter:site' content='Xé Ngay Trúng Liền')
+        meta(name='twitter:creator' content='THP Group')
+        link(rel='profile' href='https://gmpg.org/xfn/11')
+        link(rel='canonical' href='https://xengaytrunglien.com')
+        link(rel='manifest' href='./manifest.json')
+        meta(name='theme-color' content='#0d6efd')
+        link(rel='icon' href='./assets/img/favicon.ico' type='image/x-icon' sizes='32x32')
+        link(rel='icon' href='./assets/img/thp.png' sizes='192x192')
+        link(rel='icon' href='./assets/img/thp.png' sizes='any')
+        link(rel='apple-touch-icon' href='./assets/img/favicon.ico' type='image/x-icon')
+        link(async='' rel='preload' href='./assets/theme/images/bgttgtdstt-new.png' as='image' type='image/png')
+        link(href='./bundles/theme/css/bootstrap.css' rel='stylesheet')
+        link(href='./bundles/theme/css/common.css' rel='stylesheet')
+        link(href='./bundles/theme/css/homepage.css' rel='stylesheet')
+        link(rel='dns-prefetch' href='//www.thp.com.vn')
+        link(rel='dns-prefetch' href='//cdnjs.cloudflare.com')
+        link(rel='dns-prefetch' href='//www.google.com')
+        link(rel='dns-prefetch' href='//s.w.org')
+        link(rel='dns-prefetch' href='//cdn.jsdelivr.net')
+        link(rel='dns-prefetch' href='//code.jquery.com')
+        link(rel='dns-prefetch' href='//kit.fontawesome.com')
+        link(rel='dns-prefetch' href='https://thp.esms.vn')
+        link(rel='stylesheet' type='text/css' href='./cdn.datatables.net/v/bs4/dt-1.10.24/datatables.min.css')
+        link(rel='stylesheet' type='text/css' href='./assets/minigame/ty-phu/css/style3940.css?v=1.1.36')
+        script(data-cfasync='false' src='./cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js')
+        script(type='text/javascript' src='./assets/theme/js/jquery-3.2.1.min.js?v=1.1.36')
+        script(type='text/javascript' src='./Scripts/utils3940.js?v=1.1.36')
+
+        
+    body
+        .d-flex.flex-column(style="min-height: 100vh")
+            include ../_parts/header
+            main.main-container.flex-grow-1
+                block container
+            include ../_parts/footer
+        
+        
