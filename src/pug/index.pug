@@ -9,12 +9,12 @@ block vars
 block container
     
     .section-primary.bgCommon.h-fullscreen
-        .position-relative
+        .container.position-relative
             img.w-100(loading='lazy' src='./assets/theme/images/index/index_giai_ty_phu.png?v=1.1.36' alt='')
             .form-content.mb-5
-                form.d-inline-block(action='#')
+                form.d-inline-block.max-100(action='#')
                     .field.position-relative.mb-5
-                        .icon_01
+                        .icon_01.d-none.d-lg-block
                             img(loading='lazy' src="./assets/theme/images/index/bieutuonginput.png?v=1.1.36", alt="")
                         .fieldinner
                             input#txtPhoneWinner(type='text' placeholder='Nhập mã code')
@@ -31,42 +31,78 @@ block container
                     .field.position-relative
                         .fieldinner.text-center
                             a.trans(href="#") 
-                                img(loading='lazy' src="./assets/theme/images/index/dong_y.png?v=1.1.36", alt="")
+                                img.btn(loading='lazy' src="./assets/theme/images/index/dong_y.png?v=1.1.36", alt="")
 
     .section-secondary.h-fullscreen
-        .position-relative
-            .code
-                a.d-inline-block.trans(href="#") 
-                    img.w-100(loading='lazy' src='./assets/theme/images/btninputcode.png?v=1.1.36' alt='')
-            img.w-100(loading='lazy' src='./assets/theme/images/index/index_giai_ty_phu_1_ty.png?v=1.1.36' alt='')
+        .container.py-4.d-none.d-lg-block
+            .position-relative.content
+                .code
+                    a.d-inline-block.trans(href="#") 
+                        img.w-100(loading='lazy' src='./assets/theme/images/btninputcode.png?v=1.1.36' alt='')
+                span.image
+                    img.w-100(loading='lazy' src='./assets/theme/images/index/index_giai_ty_phu_1_ty.png?v=1.1.36' alt='')
+                span.deco
+                    img(src='./assets/theme/images/index/index_giai_ty_phu_1_ty_deco.png?v=1.1.36' alt='')
+        .d-block.d-lg-none
+            img.w-100(loading='lazy' src='./assets/theme/images/index/sp/1_ty.png?v=1.1.36' alt='')
 
     .section-tertiary.h-fullscreen
-        .position-relative
-            .code
-                a.d-inline-block.trans(href="#") 
-                    img.w-100(loading='lazy' src='./assets/theme/images/index/xe_ngay.png?v=1.1.36' alt='')
-            img.w-100(loading='lazy' src='./assets/theme/images/index/index_tong_giai_thuong.png?v=1.1.36' alt='')
+        .container.d-none.d-lg-block
+            .text-center.py-5
+                h2.fnt-60 Tổng giải thưởng đang chờ bạn :
+            .position-relative
+                .bg-yellow 
+                    .content
+                        .row.pb-5
+                            .col-12.col-lg-6
+                                span.mot_ty
+                                    img.max-100(loading='lazy' src='./assets/theme/images/index/1_ty.png?v=1.1.36' alt='')
+                            .col-12.col-lg-6
+                                span.trieu_phu
+                                    span.number
+                                        img.max-100(loading='lazy' src='./assets/theme/images/number_9.png?v=1.1.36' alt='' width='244')
+                                    span
+                                        img.max-100(loading='lazy' src='./assets/theme/images/index/trieu_phu.png?v=1.1.36' alt='')
+                                   
+                        .text-center.code.d-none.d-lg-block
+                            a.d-inline-block.trans(href="#") 
+                                img.max-100(loading='lazy' src='./assets/theme/images/index/xe_ngay.png?v=1.1.36' alt='')
+        span.d-block.d-lg-none.text-center
+            span.trieu_phu
+                span.number
+                    img.max-100(loading='lazy' src='./assets/theme/images/number_9.png?v=1.1.36' alt='' width='244')
+                span
+                    img.max-100.w-100(loading='lazy' src='./assets/theme/images/index/sp/giai_trieu_phu.png?v=1.1.36' alt='')
+
 
     .section-giai-trung-moi-ngay.h-fullscreen
-        .position-relative
-            .number 199.999
-            img.w-100(loading='lazy' src='./assets/theme/images/index/index_giai_trung_moi_ngay.png?v=1.1.36' alt='')
+        .container.d-none.d-md-block
+            h2.fnt-60 Giải trúng ngay mỗi ngày còn :
+            .position-relative
+                .number 199.999
+                img.w-100(loading='lazy' src='./assets/theme/images/index/index_giai_trung_moi_ngay.png?v=1.1.36' alt='')
             .form-content
                 form(action='#')
                     .field.position-relative
-                        .icon_01
+                        .icon_01.d-none.d-xl-block
                             img(loading='lazy' src="./assets/theme/images/index/bieutuonginput.png?v=1.1.36", alt="")
-                        .icon_02
+                        .icon_02.d-none.d-xl-block
                             img(loading='lazy' src="./assets/theme/images/index/200000_giai_3.png?v=1.1.36", alt="")
                         .fieldinner.d-flex
                             input#txtPhoneWinner(type='text' placeholder='Dò kết quả ngay!')
+        .d-block.d-md-none
+            .position-relative
+                .number 199.999
+                img.w-100(loading='lazy' src='./assets/theme/images/index/sp/xe_ngay.png?v=1.1.36' alt='')
+                span.btn
+                    img.w-100(loading='lazy' src='./assets/theme/images/index/xe_ngay.png?v=1.1.36' alt='')
             
-    .section-trieu-phu
-        .position-relative
-            h2.fnt-120 Triệu Phú Tháng 4
-            .container
-                .row.justify-content-center
-                    .col-4
+    .section-trieu-phu.overflow-hidden
+        .container.position-relative
+            h2.fnt-90 Triệu Phú Tháng 4
+            .bg-yellow
+                .content.row.justify-content-center
+                    .col-12.col-md-4.my-4
                         .millionaire
                             .head
                                 .price 100 triệu
@@ -77,7 +113,7 @@ block container
                                     | Sđt : 0969.xxx.x84
                                     br
                                     | Địa chỉ : Quảng Bình
-                    .col-4
+                    .col-12.col-md-4.my-4
                         .millionaire
                             .head
                                 .price 100 triệu
@@ -88,7 +124,7 @@ block container
                                     | Sđt : 0969.xxx.x84
                                     br
                                     | Địa chỉ : Quảng Bình
-                    .col-4
+                    .col-12.col-md-4.my-4
                         .millionaire
                             .head
                                 .price 100 triệu
@@ -99,22 +135,37 @@ block container
                                     | Sđt : 0969.xxx.x84
                                     br
                                     | Địa chỉ : Quảng Bình
-                p.text-center
+                p.text-center.content.d-none.d-md-block
                     img.max-100(loading='lazy' src="./assets/theme/images/index/trieuphu.png?v=1.1.36", alt="")
+                p.text-center.content.d-block.d-md-none
+                    img.max-100(loading='lazy' src="./assets/theme/images/index/sp/trieuphu.png?v=1.1.36", alt="")
                         
     .section-giai-ty-phu
-        .position-relative
-            p.text-center
-                img.max-100.mr-top(loading='lazy' src="./assets/theme/images/index/giai_ty_phu.png?v=1.1.36", alt="")
-            p.text-center.mot-ty
-                img.max-100(loading='lazy' src="./assets/theme/images/index/mo_ty.png?v=1.1.36", alt="")    
+        .d-none.d-md-block
+            .container.position-relative
+                p.text-center
+                    img.max-100.mr-top(loading='lazy' src="./assets/theme/images/index/giai_ty_phu.png?v=1.1.36", alt="")
+                p.text-center.mot-ty
+                    img.max-100(loading='lazy' src="./assets/theme/images/index/mo_ty.png?v=1.1.36", alt="")    
             .text-center.position-relative.mot_ty_dang_cho
                 a.btn.trans
                     img.max-100(loading='lazy' src="./assets/theme/images/index/btn_xe_ngay.png?v=1.1.36", alt="")
                 img.max-100.w-100(loading='lazy' src="./assets/theme/images/index/bg_002.png?v=1.1.36", alt="")
+        .d-block.d-md-none
+            img.w-100.max-100.mr-top(loading='lazy' src="./assets/theme/images/index/sp/giai_ty_phu.png?v=1.1.36", alt="")
+            .text-center
+                a.btn-sp.trans
+                    img.max-100(loading='lazy' src="./assets/theme/images/index/xe_ngay.png?v=1.1.36", alt=" " width="250")
 
     .section-cach-thuc-tham-gia
-        .position-relative
+        .container.position-relative
             h2.fnt-90 CÁCH THỨC THAM GIA
-            p.text-center
+            p.text-center.d-none.d-md-block
                 img.max-100(loading='lazy' src="./assets/theme/images/cach_thuc_tham_gia.png?v=1.1.36", alt="")
+            .px-4.text-center.d-block.d-md-none
+                p.mb-2
+                    img.max-100(loading='lazy' src="./assets/theme/images/index/sp/buoc_1.png?v=1.1.36", alt="")
+                p.mb-2
+                    img.max-100(loading='lazy' src="./assets/theme/images/index/sp/buoc_2.png?v=1.1.36", alt="")
+                p.mb-2
+                    img.max-100(loading='lazy' src="./assets/theme/images/index/sp/buoc_3.png?v=1.1.36", alt="")

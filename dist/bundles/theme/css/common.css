@@ -115,14 +115,6 @@ h1 img {
     width: 100%;
 }
 
-.header .logo {
-    /* position: absolute;
-    z-index: 10;
-    right: 0;
-    left: 0;
-    width: min-content; */
-}
-
 .header ul.nav-primary {
     font-weight: bold;
     font-style: italic;
@@ -1021,9 +1013,7 @@ h2 {
         height: 40rem;
     }
 
-    .footer .nav-second li a {
-        /* font-size: 2.953rem; */
-    }
+
 
     .infoFooterSection .para-reg img {
         width: auto;
@@ -1420,11 +1410,25 @@ h2 {
 
 
 /* -------- */
+.header {
+    
+    position: absolute;
+    z-index: 10001;
+    left: 0;
+    right: 0;
+    top: 0;
+    
+    z-index: 1000;
+    width: 100%;
+}
 h2.fnt-120 {
     font-size: 120px;
 }
 h2.fnt-90 {
     font-size: 90px;
+}
+h2.fnt-60 {
+    font-size: 60px;
 }
 .trans {
     transition: opacity .3s ease;
@@ -1473,9 +1477,9 @@ h2.fnt-90 {
     background-color: #F35454;
 }
 
-
 .section-primary {
     padding-top: 15vw;
+    padding-bottom: 8rem;
 }
 .section-primary .form-content {
     text-align: center;
@@ -1487,9 +1491,9 @@ h2.fnt-90 {
     max-width: 100%;
     width: 920px;
     height: 175px;
-    box-shadow: 0px 0px 9px 10px #ff0000;
-    border-radius: 999px;
-    border: 10px #ff0000;
+    /* box-shadow: 0px 0px 9px 10px #ff0000; */
+    border-radius: 20px;
+    border: 5px solid #ff0000;
     font-size: 70px;
     text-align: center;
     font-weight: 700;
@@ -1505,8 +1509,25 @@ h2.fnt-90 {
 }
 
 .section-secondary {
+    overflow: hidden;
     position: relative;
+    background-image: url(../../../assets/theme/images/index/index_giai_ty_phu_1_ty_bg.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
 }
+.section-secondary .content {
+    position: relative;
+    z-index: 10;
+    right: -5%;
+}
+.section-secondary .deco {
+    position: absolute;
+    bottom: -18%;
+    left: -15%;
+    z-index: -1;
+}
+
 .section-secondary .code {
     position: absolute;
     z-index: 10;
@@ -1516,20 +1537,38 @@ h2.fnt-90 {
 }
 
 .section-tertiary {
+    overflow: hidden;
     position: relative;
+    background-image: url(../../../assets/theme/images/bg3.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    padding: 5rem 0 0;
 }
-.section-tertiary .code {
-    position: absolute;
+.section-tertiary .content {
+    position: relative;
     z-index: 10;
-    bottom: 0;
-    right: 50%;
-    transform: translateX(50%);
-    max-width: 100%;
+    margin-bottom: 0;
+    background-image: url(../../../assets/theme/images/index/bg_money.png);
+    background-size: cover;
+    padding-bottom: 10rem;
 }
 
+.section-tertiary .trieu_phu {
+    padding-top: 300px;
+}
+
+.section-giai-trung-moi-ngay {
+    position: relative;
+    background-image: url(../../../assets/theme/images/bg3.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    padding: 5rem 0;
+}
 .section-giai-trung-moi-ngay .number {
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: 50%;
     z-index: 10;
     font-size: 160px;
@@ -1538,7 +1577,6 @@ h2.fnt-90 {
     font-weight: 700;
     padding-left: 0.5em;
 }
-
 .section-giai-trung-moi-ngay .form-content {
     transform: translateX(-50%);
     position: absolute;
@@ -1575,6 +1613,88 @@ h2.fnt-90 {
     transform: translate(50%, -50%)
 }
 
+
+.section-trieu-phu {
+    background-image: url(../../../assets/theme/images/bg3.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.section-giai-ty-phu {
+    background-image: url(../../../assets/theme/images/bg3.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    position: relative;
+    z-index: 10;
+}
+.section-giai-ty-phu .mot-ty {
+    margin-top: -150px;
+}
+.section-giai-ty-phu .mr-top {
+    margin-top: -150px;
+}
+.section-giai-ty-phu .btn {
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -25%);
+}
+.section-giai-ty-phu .mot_ty_dang_cho {
+    margin-top: -10%;
+    transform: translateY(10%);
+}
+
+.section-cach-thuc-tham-gia {
+    padding-bottom: 200px;
+}
+.section-cach-thuc-tham-gia {
+    background-image: url(../../../assets/theme/images/index/bg_003.png);
+    background-position: top center;
+    background-repeat: repeat;
+    background-size: 100% auto;
+}
+
+
+.trieu_phu {
+    display: inline-block;
+    position: relative;
+    margin-left: 15%;
+}
+.trieu_phu .number {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    transform: translate(-35%, -40%);
+    width: 36%;
+    line-height: 1;
+}
+
+.bg-yellow {
+    position: relative;
+}
+.bg-yellow .content {
+    position: relative;
+    z-index: 10;
+}
+.bg-yellow:after {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url(../../../assets/theme/images/bg_yellow.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom center;
+    z-index: 0;
+}
+
 .millionaire {
     text-align: center;
 }
@@ -1609,41 +1729,149 @@ h2.fnt-90 {
     color: #260979;
 }
 
-.section-trieu-phu {
-    background-image: url(../../../assets/theme/images/index/bg_001.png);
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
+@media (max-width: 1024px) {
+    h2.fnt-90 {
+        font-size: 60px;
+    }
+    h2.fnt-60 {
+        font-size: 40px;
+    }
+    .section-primary .form-content input, 
+    .section-primary .form-content select {
+        width: 680px;
+        height: 100px;
+        font-size: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .section-giai-trung-moi-ngay .number {
+        font-size: 12vw;
+    }
+    .section-giai-trung-moi-ngay .form-content input {
+        width: 680px;
+        height: 100px;
+        font-size: 50px;
+    }
+
+    .millionaire .name {
+        font-size: 30px;
+    }
+    .millionaire .text {
+        font-size: 25px;
+    }
+
+    .section-giai-ty-phu .mr-top {
+        margin-top: -80px;
+    }
 }
 
-.section-giai-ty-phu {
-    background-image: url(../../../assets/theme/images/index/bg_001.png);
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-}
-.section-giai-ty-phu .mot-ty {
-    margin-top: -150px;
-}
-.section-giai-ty-phu .mr-top {
-    margin-top: -150px;
+
+@media (max-width: 768px) {
+    .section-primary {
+        position: relative;
+        z-index: 10;
+        padding-bottom: 0;
+        padding-top: 25vw;
+    }
+    .section-primary .form-content input, .section-primary .form-content select {
+        width: 500px;
+        height: 100px;
+        font-size: 40px;
+    }
+    .section-primary .form-content {
+        margin-top: -180px;
+    }
+    .section-primary .btn {
+        width: 500px;
+    }
+
+    .section-secondary {
+        margin-top: -30vw;
+    }
+
+    .section-giai-trung-moi-ngay {
+        padding-bottom: 0;
+        background-size: cover;
+    }
+
+    .section-trieu-phu {
+        background-repeat: repeat;
+    }
+    .section-trieu-phu h2.fnt-90 {
+        font-size: 7vw !important;
+    }
+
+    .section-cach-thuc-tham-gia {
+        padding-top: 5vw;
+        padding-bottom: 100px;
+    }
+    .section-cach-thuc-tham-gia h2.fnt-90 {
+        font-size: 7vw !important;
+    }
+
+    .section-giai-ty-phu .mot-ty {
+        margin-top: -55px;
+    }
+
+    .section-giai-ty-phu {
+        padding-top: 15vw;
+        padding-bottom: 0;
+        background-size: cover;
+        /* background: none; */
+    }
+    .section-giai-ty-phu .btn {
+        width: 40vw;
+    }
+    .section-giai-ty-phu .mr-top {
+        margin-bottom: -20px;
+    }
+    .section-giai-ty-phu .btn-sp {
+        width: 50vw;
+        margin-top: -30px;
+    }
+
+    .section-giai-trung-moi-ngay .btn {
+        width: 70vw;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10;
+    }
+    .section-giai-trung-moi-ngay .number {
+        font-size: 12vw;
+        top: 30%;
+        padding: 0;
+    }
+
+    .section-tertiary .trieu_phu {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .footer {
+        background-size: 100% 12vw;
+        margin: -12vw 0 0;
+        padding: 12vw 0 0;
+    }
 }
 
-.section-giai-ty-phu .btn {
-    position: absolute;
-    z-index: 10;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -25%);
-}
-
-.section-cach-thuc-tham-gia {
-    padding-bottom: 200px;
-}
-
-.section-cach-thuc-tham-gia {
-    background-image: url(../../../assets/theme/images/index/bg_003.png);
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
+@media (max-width: 480px) {
+    .section-primary .form-content input, 
+    .section-primary .form-content select {
+        width: 300px;
+        height: 55px;
+        font-size: 20px;
+    }
+    .section-primary .form-content {
+        margin-top: -50px;
+    }
+    .section-primary .btn {
+        width: 300px;
+    }
+    .section-giai-trung-moi-ngay .number {
+        font-size: 12vw;
+        top: 40%;
+        padding: 0;
+    }
 }
