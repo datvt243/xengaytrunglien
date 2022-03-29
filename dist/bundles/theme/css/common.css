@@ -565,7 +565,7 @@ h2 {
     bottom: 0;
     left: 0;
     width: 100%;
-    z-index: 90000;
+    z-index: 10101 !important;
 }
 
 .quickbarSection .para-code {
@@ -1651,6 +1651,7 @@ h2.fnt-60 {
     padding-bottom: 200px;
 }
 .section-cach-thuc-tham-gia {
+    padding: 5vw 0;
     background-image: url(../../../assets/theme/images/index/bg_003.png);
     background-position: top center;
     background-repeat: repeat;
@@ -1729,6 +1730,35 @@ h2.fnt-60 {
     color: #260979;
 }
 
+.content-text .heading {
+    font-size: 60px;
+    font-weight: 700;
+    color: #FF0000;
+    text-shadow: 0 0 3px #faff00, 0 0 3px #faff00, 0 0 3px #faff00;
+    margin-bottom: 1rem;
+}
+.content-text .text {
+    font-size: 30px;
+    line-height: 2;
+}
+.content-text .bold {
+    font-size: 1.1em;
+    font-weight: 700;
+}
+.content-text .red {
+    color: red;
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+.section-cach-thuc-nhan-giai {
+    padding: 5vw 0 10vw;
+    background-image: url(../../../assets/theme/images/bg_01.png);
+    background-position: top center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
 @media (max-width: 1024px) {
     h2.fnt-90 {
         font-size: 60px;
@@ -1736,6 +1766,17 @@ h2.fnt-60 {
     h2.fnt-60 {
         font-size: 40px;
     }
+
+    .content-text .heading {
+        font-size: 50px;
+    }
+    .content-text .text {
+        font-size: 22px;
+    }
+    .content-text .icon {
+        width: 70px;
+    }
+
     .section-primary .form-content input, 
     .section-primary .form-content select {
         width: 680px;
@@ -1772,8 +1813,17 @@ h2.fnt-60 {
 
 }
 
-
 @media (max-width: 768px) {
+    .content-text .heading {
+        font-size: 35px;
+    }
+    .content-text .text {
+        font-size: 20px;
+    }
+    .content-text .icon {
+        width: 50px;
+    }
+
     .section-primary {
         position: relative;
         z-index: 10;
@@ -1896,6 +1946,18 @@ h2.fnt-60 {
 }
 
 @media (max-width: 480px) {
+
+    .content-text .heading {
+        font-size: 8vw;
+    }
+    .content-text .text {
+        font-size: 20px;
+    }
+    .content-text .icon {
+        width: 10vw;
+    }
+   
+
     .section-primary .form-content input, 
     .section-primary .form-content select {
         width: 300px;
