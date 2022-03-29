@@ -561,12 +561,34 @@ h2 {
 }
 
 .quickbarSection {
-    position: fixed;
-    bottom: 0;
+    position: relative;
+    /* bottom: 0;
     left: 0;
-    width: 100%;
+    width: 100%; */
     z-index: 10101 !important;
+   
 }
+.quickbarSection .btn-code {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    z-index: 10101
+}
+.quickbarSection .btn-social {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 10101;
+}
+.quickbarSection .btn-social .quickbarrighttwidth {
+    width: auto !important;
+}
+.quickbarSection .btn-code #btnScrollSpinTOP {
+    position: inherit !important;
+    width: 160px !important;
+    height: 80px !important;
+}
+
 
 .quickbarSection .para-code {
     width: 269px;
@@ -1651,7 +1673,7 @@ h2.fnt-60 {
     padding-bottom: 200px;
 }
 .section-cach-thuc-tham-gia {
-    padding: 5vw 0;
+    padding: 5vw 0 10vw;
     background-image: url(../../../assets/theme/images/index/bg_003.png);
     background-position: top center;
     background-repeat: repeat;
@@ -1698,6 +1720,7 @@ h2.fnt-60 {
 
 .millionaire {
     text-align: center;
+    padding: 0 2rem;
 }
 .millionaire .head {
     position: relative;
@@ -1814,6 +1837,14 @@ h2.fnt-60 {
 }
 
 @media (max-width: 768px) {
+
+    .quickbarSection .btn-social {
+        width: 80px;
+    }
+    .quickbarSection .btn-code #btnScrollSpinTOP {
+        width: 120px  !important
+    }
+
     .content-text .heading {
         font-size: 35px;
     }
@@ -1853,6 +1884,7 @@ h2.fnt-60 {
 
     .section-trieu-phu {
         background-repeat: repeat;
+        padding: 10vw 0;
     }
     .section-trieu-phu h2.fnt-90 {
         font-size: 7vw !important;
@@ -1946,7 +1978,16 @@ h2.fnt-60 {
 }
 
 @media (max-width: 480px) {
-
+    .popup .btnClose {
+        right: 0;
+        top: -15px;
+    }
+    .quickbarSection .btn-social {
+        width: 50px;
+    }
+    .quickbarSection .btn-code #btnScrollSpinTOP {
+        width: 80px  !important
+    }
     .content-text .heading {
         font-size: 8vw;
     }

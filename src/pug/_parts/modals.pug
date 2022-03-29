@@ -22,6 +22,13 @@
     .field
       input#txtPhone(type='tel' name='phone' placeholder='Số điện thoại' autocomplete='on' max='15')
     .field
+      select.form-select()
+        option(selected='') Chọn nhà mạng
+        option(value='1') One
+        option(value='2') Two
+        option(value='3') Three
+      //- input#txtPhone(type='tel' name='phone' placeholder='Số điện thoại' autocomplete='on' max='15')
+    .field
       input#txtCode(type='text' name='code' placeholder='Mã dự thưởng' autocomplete='off')
     div(style='width: 457px; height: 84px; margin: 0 auto 19px; padding: 0 20px;')
       .g-recaptcha(data-sitekey='6LePIYcaAAAAAF0-mGwDcpH85-G7u1AohQBH5am4' data-size='normal' data-theme='light' data-callback='onRecaptcha' data-expired-callback='onRecaptcha' data-error-callback='onRecaptcha')
