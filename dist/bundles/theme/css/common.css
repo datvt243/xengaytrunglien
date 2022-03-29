@@ -801,6 +801,7 @@ h2 {
 .jcarousel-control-prev,
 .jcarousel-control-next {
     position: absolute;
+    z-index: 100;
     top: 50%;
     width: 51px;
     height: 51px;
