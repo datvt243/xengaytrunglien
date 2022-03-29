@@ -314,7 +314,7 @@
                               if (width >= 600) {
                                   width = width / 3;
                               } else if (width >= 350) {
-                                  width = width / 2;
+                                  width = width;
                               }
         
                               carousel.jcarousel('items').css('width', Math.ceil(width) + 'px');
@@ -357,27 +357,27 @@
                       console.log("error");
                   });
         
-              Utils.loaderScript("https://cdn.jsdelivr.net/npm/sweetalert2@10")
-                  .then(() => {
-                      console.log("sweetalert");
+              //- Utils.loaderScript("https://cdn.jsdelivr.net/npm/sweetalert2@10")
+              //-     .then(() => {
+              //-         console.log("sweetalert");
         
-                      setTimeout(function () {
-                          Utils.Notify.swalFire({
-                              html: '<b style="font-size: xx-large;">Xé nhãn chai, tham gia sự kiện online ngày 05/07/2021</b> <br><a target="_blank" href="//bom.to/fanpage-tanhiepphat"><u>Tại đây</u><img src="./assets/minigame/double-award/img/cum-san-pham.png?1.1.36" alt="Xé ngay trúng liền" class=" " loading="lazy" style="width: 100%;"> </a>',
-                              showCloseButton: true,
-                              showConfirmButton: false,
-                              allowOutsideClick: true,
-                              //timer: 5000,
-                              hideClass: {
-                                  popup: 'animate__animated animate__fadeOutUp'
-                              },
-                              confirmButtonClass: "btn-small",
-                          })
-                      }, 1000);
-                  })
-                  .catch(() => {
-                      console.log("error");
-                  });
+              //-         setTimeout(function () {
+              //-             Utils.Notify.swalFire({
+              //-                 html: '<b style="font-size: xx-large;">Xé nhãn chai, tham gia sự kiện online ngày 05/07/2021</b> <br><a target="_blank" href="//bom.to/fanpage-tanhiepphat"><u>Tại đây</u><img src="./assets/minigame/double-award/img/cum-san-pham.png?1.1.36" alt="Xé ngay trúng liền" class=" " loading="lazy" style="width: 100%;"> </a>',
+              //-                 showCloseButton: true,
+              //-                 showConfirmButton: false,
+              //-                 allowOutsideClick: true,
+              //-                 //timer: 5000,
+              //-                 hideClass: {
+              //-                     popup: 'animate__animated animate__fadeOutUp'
+              //-                 },
+              //-                 confirmButtonClass: "btn-small",
+              //-             })
+              //-         }, 1000);
+              //-     })
+              //-     .catch(() => {
+              //-         console.log("error");
+              //-     });
         
               Utils.loaderScript("/kit.fontawesome.com/4e4d0ff18e.js")
                   .then(() => {
