@@ -51,7 +51,7 @@ script(async defer type='text/javascript').
                 $(".jcarousel-wrapper3 .jcarousel li").css("width", jcawrapper3Width);
                 $(".jcarousel-wrapper3 .jcarousel li").css("height", jcawrapper3Height);
 
-                $('#jcarousel1, #jcarousel2, #jcarousel3, #jcarousel-trieu-phu')
+                $('#jcarousel1, #jcarousel2, #jcarousel3')
                     .jcarousel({
                         wrap: 'circular'
                     })
@@ -59,6 +59,28 @@ script(async defer type='text/javascript').
                         interval: 3000,
                         target: '+=1',
                         autostart: true
+                    });
+
+                $('#jcarousel-trieu-phu')
+                    .on('jcarousel:reload jcarousel:create', function () {
+                        var carousel = $(this),
+                            width = carousel.innerWidth();
+
+                        if (width >= 600) {
+                            width = width / 3;
+                        } else if (width >= 350) {
+                            width = width / 2;
+                        }
+
+                        carousel.jcarousel('items').css('width', Math.ceil(width) + 'px');
+                    })
+                    .jcarousel({
+                        wrap: 'circular'
+                    })
+                    .jcarouselAutoscroll({
+                        //- interval: 3000,
+                        target: '+=1',
+                        //- autostart: true
                     });
 
                 $('.jcarousel-control-prev1, .jcarousel-control-prev2')
