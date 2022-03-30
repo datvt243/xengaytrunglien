@@ -65,245 +65,40 @@
         </div>
       </div>
       <main class="main-container flex-grow-1">
-        <div class="section-primary bgCommon h-fullscreen">
-          <div class="container position-relative"><img class="w-100" loading="lazy" src="./assets/theme/images/index/index_giai_ty_phu.png?v=1.1.36" alt="">
-            <div class="form-content mb-5">
-              <form class="d-inline-block max-100" action="#">
-                <div class="field position-relative mb-5">
-                  <div class="icon_01 d-none d-lg-block"><img loading="lazy" src="./assets/theme/images/index/bieutuonginput.png?v=1.1.36" alt=""></div>
-                  <div class="fieldinner">
-                    <input id="txtPhoneWinner" type="text" placeholder="Nhập mã code">
-                  </div>
-                </div>
-                <div class="field position-relative mb-5">
-                  <div class="fieldinner">
-                    <select class="form-select">
-                      <option selected="">Chọn nhà mạng</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="field position-relative mb-5">
-                  <div class="fieldinner">
-                    <input id="txtPhoneWinner" type="text" placeholder="Nhập số điện thoại">
-                  </div>
-                </div>
-                <div class="field position-relative">
-                  <div class="fieldinner text-center"><a class="trans" href="#"> <img class="btn" loading="lazy" src="./assets/theme/images/index/dong_y.png?v=1.1.36" alt=""></a></div>
-                </div>
-              </form>
+        <div class="container" style="padding:300px 0">
+          <div class="d-flex">
+            <div class="column px-3">
+              <button class="btn btn-success" id="js-show-modal-01" style="font-size: 30px;padding: 20px;">umn.px-3modal 01</button>
+            </div>
+            <div class="col">
+              <button class="btn btn-success" id="js-show-modal-02" style="font-size: 30px;padding: 20px;">
+                 modal 02</button>
             </div>
           </div>
         </div>
-        <div class="section-secondary h-fullscreen">
-          <div class="container py-4 d-none d-lg-block">
-            <div class="position-relative content">
-              <div class="code"><a class="d-inline-block trans show_popupSpinWheelReward" href="javascript:void()" data-bs-toggle="modal" data-bs-target="#exampleModal"> <img class="w-100" loading="lazy" src="./assets/theme/images/btninputcode.png?v=1.1.36" alt=""></a></div><span class="image"><img class="w-100" loading="lazy" src="./assets/theme/images/index/index_giai_ty_phu_1_ty.png?v=1.1.36" alt=""></span><span class="deco"><img src="./assets/theme/images/index/index_giai_ty_phu_1_ty_deco.png?v=1.1.36" alt=""></span>
-            </div>
-          </div>
-          <div class="d-block d-lg-none"><img class="w-100" loading="lazy" src="./assets/theme/images/index/sp/1_ty.png?v=1.1.36" alt=""></div>
+        <div class="popup w-auto p-0 content-trung-thuong" id="js-modal-trung-thuong">
+          <button class="close swal2-close js-close-modal" type="button" aria-label="Close this dialog" style="display: flex;"><img class="max-100 w-100" loading="lazy" src="./assets/theme/images/trung-thuong/close.png?v=1.1.36" alt=""></button>
+          <div class="content"><span class="button"><a class="trans d-inline-block" href="#"><img class="max-100 w-100" loading="lazy" src="./assets/theme/images/trung-thuong/xe-ngay.png?v=1.1.36" alt=""></a></span><span class="price"><img class="max-100 w-100" loading="lazy" src="./assets/theme/images/trung-thuong/img_10.png?v=1.1.36" alt=""></span><img class="max-100" loading="lazy" src="./assets/theme/images/trung-thuong/xe-ngay-trung-lien.png?v=1.1.36" alt=""></div>
         </div>
-        <div class="section-tertiary h-fullscreen">
-          <div class="container d-none d-lg-block">
-            <div class="text-center py-5">
-              <h2 class="fnt-60">Tổng giải thưởng đang chờ bạn :</h2>
-            </div>
-            <div class="position-relative">
-              <div class="bg-yellow"> 
-                <div class="content">
-                  <div class="row pb-5">
-                    <div class="col-12 col-lg-6"><span class="mot_ty"><img class="max-100" loading="lazy" src="./assets/theme/images/index/1_ty.png?v=1.1.36" alt=""></span></div>
-                    <div class="col-12 col-lg-6"><span class="trieu_phu"><span class="number"><img class="max-100" loading="lazy" src="./assets/theme/images/number_9.png?v=1.1.36" alt="" width="244"></span><span><img class="max-100" loading="lazy" src="./assets/theme/images/index/trieu_phu.png?v=1.1.36" alt=""></span></span></div>
-                  </div>
-                  <div class="text-center code d-none d-lg-block"><a class="d-inline-block trans" href="#"> <img class="max-100" loading="lazy" src="./assets/theme/images/index/xe_ngay.png?v=1.1.36" alt=""></a></div>
-                </div>
-              </div>
-            </div>
-          </div><span class="d-block d-lg-none text-center"><span class="trieu_phu"><span class="number"><img class="max-100" loading="lazy" src="./assets/theme/images/number_9.png?v=1.1.36" alt="" width="244"></span><span><img class="max-100 w-100" loading="lazy" src="./assets/theme/images/index/sp/giai_trieu_phu.png?v=1.1.36" alt=""></span></span></span>
-        </div>
-        <div class="section-giai-trung-moi-ngay h-fullscreen">
-          <div class="container d-none d-md-block">
-            <h2 class="fnt-60">Giải trúng ngay mỗi ngày còn :</h2>
-            <div class="position-relative">
-              <div class="number">199.999</div><img class="w-100" loading="lazy" src="./assets/theme/images/index/index_giai_trung_moi_ngay.png?v=1.1.36" alt="">
-            </div>
-            <div class="form-content">
-              <form action="#">
-                <div class="field position-relative">
-                  <div class="icon_01 d-none d-xl-block"><img loading="lazy" src="./assets/theme/images/index/bieutuonginput.png?v=1.1.36" alt=""></div>
-                  <div class="icon_02 d-none d-xl-block"><img loading="lazy" src="./assets/theme/images/index/200000_giai_3.png?v=1.1.36" alt=""></div>
-                  <div class="fieldinner d-flex">
-                    <input id="txtPhoneWinner" type="text" placeholder="Dò kết quả ngay!">
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-          <div class="d-block d-md-none">
-            <div class="position-relative">
-              <div class="number">199.999</div><img class="w-100" loading="lazy" src="./assets/theme/images/index/sp/xe_ngay.png?v=1.1.36" alt=""><span class="btn"><img class="w-100" loading="lazy" src="./assets/theme/images/index/xe_ngay.png?v=1.1.36" alt=""></span>
-            </div>
-          </div>
-        </div>
-        <div class="section-trieu-phu overflow-hidden">
-          <div class="container position-relative px-0 px-md-2">
-            <h2 class="fnt-90">Triệu Phú Tháng 4</h2>
-            <div class="bg-yellow">
-              <div class="content px-5">
-                <div class="jcarousel-wrapper">
-                  <div class="jcarousel" id="jcarousel-trieu-phu">
-                    <ul class="list-unstyled">
-                      <li>
-                        <div class="px-4">
-                          <div class="millionaire">
-                            <div class="head">
-                              <div class="price">100 triệu</div><img class="avatar" loading="lazy" src="./assets/theme/images/index/avatar_001.png?v=1.1.36" alt="">
-                            </div>
-                            <div class="content">
-                              <p class="name">Nguyễn Văn A</p>
-                              <p class="text">
-                                 Sđt : 0969.xxx.x84<br>Địa chỉ : Quảng Bình</p>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="px-4">
-                          <div class="millionaire">
-                            <div class="head">
-                              <div class="price">100 triệu</div><img class="avatar" loading="lazy" src="./assets/theme/images/index/avatar_002.png?v=1.1.36" alt="">
-                            </div>
-                            <div class="content">
-                              <p class="name">Nguyễn Văn A</p>
-                              <p class="text">
-                                 Sđt : 0969.xxx.x84<br>Địa chỉ : Quảng Bình</p>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="px-4">
-                          <div class="millionaire">
-                            <div class="head">
-                              <div class="price">100 triệu</div><img class="avatar" loading="lazy" src="./assets/theme/images/index/avatar_003.png?v=1.1.36" alt="">
-                            </div>
-                            <div class="content">
-                              <p class="name">Nguyễn Văn A</p>
-                              <p class="text">
-                                 Sđt : 0969.xxx.x84<br>Địa chỉ : Quảng Bình</p>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="px-4">
-                          <div class="millionaire">
-                            <div class="head">
-                              <div class="price">100 triệu</div><img class="avatar" loading="lazy" src="./assets/theme/images/index/avatar_001.png?v=1.1.36" alt="">
-                            </div>
-                            <div class="content">
-                              <p class="name">Nguyễn Văn A</p>
-                              <p class="text">
-                                 Sđt : 0969.xxx.x84<br>Địa chỉ : Quảng Bình</p>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="px-4">
-                          <div class="millionaire">
-                            <div class="head">
-                              <div class="price">100 triệu</div><img class="avatar" loading="lazy" src="./assets/theme/images/index/avatar_002.png?v=1.1.36" alt="">
-                            </div>
-                            <div class="content">
-                              <p class="name">Nguyễn Văn A</p>
-                              <p class="text">
-                                 Sđt : 0969.xxx.x84<br>Địa chỉ : Quảng Bình</p>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="px-4">
-                          <div class="millionaire">
-                            <div class="head">
-                              <div class="price">100 triệu</div><img class="avatar" loading="lazy" src="./assets/theme/images/index/avatar_003.png?v=1.1.36" alt="">
-                            </div>
-                            <div class="content">
-                              <p class="name">Nguyễn Văn A</p>
-                              <p class="text">
-                                 Sđt : 0969.xxx.x84<br>Địa chỉ : Quảng Bình</p>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div><a class="jcarousel-control-prev jcarousel-control-prev2" href="#"></a><a class="jcarousel-control-next jcarousel-control-next2" href="#"></a>
-                </div>
-              </div>
-              <p class="text-center content d-none d-md-block"><img class="max-100" loading="lazy" src="./assets/theme/images/index/trieuphu.png?v=1.1.36" alt=""></p>
-              <p class="text-center content d-block d-md-none"><img class="max-100 w-100" loading="lazy" src="./assets/theme/images/index/sp/trieuphu.png?v=1.1.36" alt=""></p>
-            </div>
-          </div>
-        </div>
-        <div class="section-giai-ty-phu">
-          <div class="d-none d-md-block">
-            <div class="container position-relative">
-              <p class="text-center"><img class="max-100 mr-top" loading="lazy" src="./assets/theme/images/index/giai_ty_phu.png?v=1.1.36" alt=""></p>
-              <p class="text-center mot-ty"><img class="max-100" loading="lazy" src="./assets/theme/images/index/mo_ty.png?v=1.1.36" alt=""></p>
-            </div>
-            <div class="text-center position-relative mot_ty_dang_cho"><a class="btn trans"><img class="max-100" loading="lazy" src="./assets/theme/images/index/btn_xe_ngay.png?v=1.1.36" alt=""></a><img class="max-100 w-100" loading="lazy" src="./assets/theme/images/index/bg_002.png?v=1.1.36" alt=""></div>
-          </div>
-          <div class="d-block d-md-none"><img class="w-100 max-100 mr-top" loading="lazy" src="./assets/theme/images/index/sp/giai_ty_phu.png?v=1.1.36" alt="">
-            <div class="text-center"><a class="btn-sp trans"><img class="max-100" loading="lazy" src="./assets/theme/images/index/xe_ngay.png?v=1.1.36" alt=" " width="250"></a></div>
-          </div>
-        </div>
-        <div class="section-cach-thuc-tham-gia">
-          <div class="container position-relative">
-            <h2 class="fnt-90">CÁCH THỨC THAM GIA</h2>
-            <p class="text-center d-none d-md-block"><img class="max-100" loading="lazy" src="./assets/theme/images/cach_thuc_tham_gia.png?v=1.1.36" alt=""></p>
-            <div class="px-4 text-center d-block d-md-none">
-              <p class="mb-2"><img class="max-100" loading="lazy" src="./assets/theme/images/index/sp/buoc_1.png?v=1.1.36" alt=""></p>
-              <p class="mb-2"><img class="max-100" loading="lazy" src="./assets/theme/images/index/sp/buoc_2.png?v=1.1.36" alt=""></p>
-              <p class="mb-2"><img class="max-100" loading="lazy" src="./assets/theme/images/index/sp/buoc_3.png?v=1.1.36" alt=""></p>
-            </div>
-          </div>
+        <div class="popup w-auto p-0 content-trung-thuong" id="js-modal-mayman">
+          <button class="close swal2-close js-close-modal" type="button" aria-label="Close this dialog" style="display: flex;"><img class="max-100 w-100" loading="lazy" src="./assets/theme/images/trung-thuong/close.png?v=1.1.36" alt=""></button>
+          <div class="content"><span class="number">199.999</span><img class="max-100" loading="lazy" src="./assets/theme/images/trung-thuong/mayman.png?v=1.1.36" alt=""></div>
         </div>
         <script>
-          $(".show_popupSpinWheelReward").click(function (event) {
-              event.preventDefault();
+          $(document).ready(function () {
+              $('#js-show-modal-01').click(function (){
+                  $('.popup-wrapper, #js-modal-trung-thuong').show();
+              });
+              $('#js-show-modal-02').click(function (){
+                  $('.popup-wrapper, #js-modal-mayman').show();
+              });
           
-              try {
-                  if (grecaptcha) {
-                      $('.g-recaptcha').on('click', function (e) {
-                          try {
-                              $('.g-recaptcha-bubble-arrow').parent().addClass('custom-gcaptcha')
-                          } catch (e) { }
-                      })
-                  }
-              } catch (e) {
-                  Utils.loaderScript("https://www.google.com/recaptcha/api.js?hl=vi")
-                      .then(() => { console.log("loaded"); })
-                      .catch(() => { console.log("error"); });
-              }
           
-              //if (isSpinWheel) {
-              //    console.log('spin wheel is running')
-              //} else {
-                  $('.popup-wrapper, #popupSpinWheelReward').show();
-                  $('html').css("overflow-y", "visible !important");
-              //}
-          
-              setTimeout(() => {
-                  if (isSpinWheel) {
-          
-                  } else {
-                      spinWheel(setting.defaultWheel);
-                      console.log('run defaultWheel');
-                  }
-              }, 100);
+              $('.js-close-modal').click(function (){
+                let parent = this.closest('.popup');
+                $(parent).hide(200);
+                $('.popup-wrapper').hide();
+              });
           });
         </script>
       </main>

@@ -1,0 +1,50 @@
+.content-trung-thuong {
+  position: relative;
+}
+.content-trung-thuong .content {
+  position: relative;
+}
+.content-trung-thuong .price {
+  position: absolute;
+  z-index: 10;
+  width: 55%;
+  bottom: 28%;
+  left: 19%;
+}
+.content-trung-thuong .button {
+  position: absolute;
+  z-index: 10;
+  bottom: 13%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 38%;
+}
+.content-trung-thuong .close {
+  position: absolute;
+  z-index: 10;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  padding: 2px;
+  width: 30px;
+}
+.content-trung-thuong .number {
+  position: absolute;
+  bottom: 15%;
+  left: 60%;
+  font-size: 3.6vw;
+  z-index: 10;
+  color: #EBFF00;
+  font-weight: 700;
+}
+
+.section-giai-trung-moi-ngay {
+  overflow: hidden;
+}
+
+
+.dollarfallsection {
+  display: none;
+}

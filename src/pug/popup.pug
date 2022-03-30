@@ -1,0 +1,54 @@
+extends _layouts/default
+
+block vars
+    -title        = 'Karo | Trứng tươi - chà bông'
+    -description  = ''
+    -keywords     = ''
+    -pageID       = 'top'
+    -path         = '.'
+block container
+    
+    .container(style="padding:300px 0")
+      .d-flex
+        .column.px-3
+          button#js-show-modal-01(class="btn btn-success" style="font-size: 30px;padding: 20px;")
+            | umn.px-3modal 01
+        .col
+          button#js-show-modal-02(class="btn btn-success" style="font-size: 30px;padding: 20px;") 
+            | modal 02
+
+    #js-modal-trung-thuong.popup.w-auto.p-0.content-trung-thuong
+      button.close.swal2-close.js-close-modal(type='button' aria-label='Close this dialog' style='display: flex;')
+        img.max-100.w-100(loading='lazy' src="./assets/theme/images/trung-thuong/close.png?v=1.1.36", alt="")
+      .content
+        span.button
+          a.trans.d-inline-block(href="#")
+            img.max-100.w-100(loading='lazy' src="./assets/theme/images/trung-thuong/xe-ngay.png?v=1.1.36", alt="")
+        span.price
+          img.max-100.w-100(loading='lazy' src="./assets/theme/images/trung-thuong/img_10.png?v=1.1.36", alt="")
+        img.max-100(loading='lazy' src="./assets/theme/images/trung-thuong/xe-ngay-trung-lien.png?v=1.1.36", alt="")
+
+    #js-modal-mayman.popup.w-auto.p-0.content-trung-thuong
+      button.close.swal2-close.js-close-modal(type='button' aria-label='Close this dialog' style='display: flex;')
+        img.max-100.w-100(loading='lazy' src="./assets/theme/images/trung-thuong/close.png?v=1.1.36", alt="")
+      .content
+        span.number 199.999
+        img.max-100(loading='lazy' src="./assets/theme/images/trung-thuong/mayman.png?v=1.1.36", alt="")
+
+    script.
+
+      $(document).ready(function () {
+          $('#js-show-modal-01').click(function (){
+              $('.popup-wrapper, #js-modal-trung-thuong').show();
+          });
+          $('#js-show-modal-02').click(function (){
+              $('.popup-wrapper, #js-modal-mayman').show();
+          });
+
+
+          $('.js-close-modal').click(function (){
+            let parent = this.closest('.popup');
+            $(parent).hide(200);
+            $('.popup-wrapper').hide();
+          });
+      });
