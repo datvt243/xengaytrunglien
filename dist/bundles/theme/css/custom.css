@@ -1,5 +1,7 @@
 .content-trung-thuong {
   position: relative;
+  max-width: 800px;
+  
 }
 .content-trung-thuong .content {
   position: relative;
@@ -30,14 +32,31 @@
   padding: 2px;
   width: 30px;
 }
+.content-trung-thuong .close.is-black {
+  display: flex;
+  border: 1px solid #000;
+  background: #000;
+  border-radius: 999px;
+  padding: 5px;
+}
 .content-trung-thuong .number {
   position: absolute;
-  bottom: 15%;
-  left: 60%;
+  bottom: 14%;
+  left: 58%;
   font-size: 3.6vw;
   z-index: 10;
   color: #EBFF00;
   font-weight: 700;
+}
+.content-trung-thuong .button-group-bottom {
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  left: 0;
+  font-size: 3.6vw;
+  z-index: 10;
+  padding: 0;
+  width: 100%;
 }
 
 .section-giai-trung-moi-ngay {

@@ -68,11 +68,23 @@
         <div class="container" style="padding:300px 0">
           <div class="d-flex">
             <div class="column px-3">
-              <button class="btn btn-success" id="js-show-modal-01" style="font-size: 30px;padding: 20px;">umn.px-3modal 01</button>
+              <button class="btn btn-success" id="js-show-modal-01" style="font-size: 30px;padding: 20px;">modal 01</button>
             </div>
-            <div class="col">
+            <div class="column px-3">
               <button class="btn btn-success" id="js-show-modal-02" style="font-size: 30px;padding: 20px;">
                  modal 02</button>
+            </div>
+            <div class="column px-3">
+              <button class="btn btn-success" id="js-show-modal-03" style="font-size: 30px;padding: 20px;">
+                 modal 03</button>
+            </div>
+            <div class="column px-3">
+              <button class="btn btn-success" id="js-show-modal-04" style="font-size: 30px;padding: 20px;">
+                 modal 04</button>
+            </div>
+            <div class="column px-3">
+              <button class="btn btn-success" id="js-show-modal-05" style="font-size: 30px;padding: 20px;">
+                 modal 05</button>
             </div>
           </div>
         </div>
@@ -84,6 +96,26 @@
           <button class="close swal2-close js-close-modal" type="button" aria-label="Close this dialog" style="display: flex;"><img class="max-100 w-100" loading="lazy" src="./assets/theme/images/trung-thuong/close.png?v=1.1.36" alt=""></button>
           <div class="content"><span class="number">199.999</span><img class="max-100" loading="lazy" src="./assets/theme/images/trung-thuong/mayman.png?v=1.1.36" alt=""></div>
         </div>
+        <div class="popup w-auto p-0 content-trung-thuong" id="js-modal-livetream-01">
+          <button class="close is-black swal2-close js-close-modal" type="button" aria-label="Close this dialog" style="display: flex;"><img class="max-100 w-100" loading="lazy" src="./assets/theme/images/trung-thuong/close.png?v=1.1.36" alt=""></button>
+          <div class="content">
+            <div class="button-group-bottom">
+              <div class="row px-3">
+                <div class="col px-1"><a class="trans d-block lh-1" href="#"><img class="w-100 max-100" loading="lazy" src="./assets/theme/images/livetream/livetream_btn_01.png?v=1.1.36" alt=""></a></div>
+                <div class="col px-1"><a class="trans d-block lh-1" href="#"><img class="w-100 max-100" loading="lazy" src="./assets/theme/images/livetream/livetream_btn_02.png?v=1.1.36" alt=""></a></div>
+                <div class="col px-1"><a class="trans d-block lh-1" href="#"><img class="w-100 max-100" loading="lazy" src="./assets/theme/images/livetream/livetream_btn_03.png?v=1.1.36" alt=""></a></div>
+              </div>
+            </div><img class="max-100" loading="lazy" src="./assets/theme/images/livetream/livetream.png?v=1.1.36" alt="">
+          </div>
+        </div>
+        <div class="popup w-auto p-0 content-trung-thuong" id="js-modal-livetream-02">
+          <button class="close is-black swal2-close js-close-modal" type="button" aria-label="Close this dialog" style="display: flex;"><img class="max-100 w-100" loading="lazy" src="./assets/theme/images/trung-thuong/close.png?v=1.1.36" alt=""></button>
+          <div class="content"><img class="max-100" loading="lazy" src="./assets/theme/images/livetream/livetream_02.png?v=1.1.36" alt=""></div>
+        </div>
+        <div class="popup w-auto p-0 content-trung-thuong" id="js-modal-livetream-03">
+          <button class="close is-black swal2-close js-close-modal" type="button" aria-label="Close this dialog" style="display: flex;"><img class="max-100 w-100" loading="lazy" src="./assets/theme/images/trung-thuong/close.png?v=1.1.36" alt=""></button>
+          <div class="content"><img class="max-100" loading="lazy" src="./assets/theme/images/livetream/livetream_03.png?v=1.1.36" alt=""></div>
+        </div>
         <script>
           $(document).ready(function () {
               $('#js-show-modal-01').click(function (){
@@ -91,6 +123,15 @@
               });
               $('#js-show-modal-02').click(function (){
                   $('.popup-wrapper, #js-modal-mayman').show();
+              });
+              $('#js-show-modal-03').click(function (){
+                  $('.popup-wrapper, #js-modal-livetream-01').show();
+              });
+              $('#js-show-modal-04').click(function (){
+                  $('.popup-wrapper, #js-modal-livetream-02').show();
+              });
+              $('#js-show-modal-05').click(function (){
+                  $('.popup-wrapper, #js-modal-livetream-03').show();
               });
           
           
